@@ -12,6 +12,7 @@ class RemoveConfirmType extends AbstractType
     {
         $builder
             ->add('field_name')
+            ->add('sumbit', SubmitType::class);
         ;
     }
 

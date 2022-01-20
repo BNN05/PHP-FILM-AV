@@ -35,6 +35,7 @@ class FilmDetailsController extends AbstractController
 
         $form = $this->createFormBuilder()
             ->add('code', TextType::class)
+            ->add('supprimer', SubmitType::class)
             ->getForm();
         $form->handleRequest($request);
 

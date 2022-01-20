@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello films_Details!{% endblock %}
+
+{% block body %}
+
+    <div class=" bg-indigo-100 flex justify-center w-screen items-center">
+        <div class="lg:w-3/5 md:w-4/5 w-2/3 mb-5">
+            <div class="bg-white p-10 rounded-lg shadow-lg min-w-full">
+                
+                <h1 class="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">{{filmName}}</h1>
+                <p class="text-center text-2xl text-gray-600 font-sans">Description : {{filmDescription}}</p>
+                <p class="text-center text-2xl text-gray-600 font-sans">Score : {{filmNote}} </p>
+                <p class="text-center text-2xl text-gray-600 font-sans">Nombre de votes : {{filmNbVotes}} </p>
+                
+            {{ form_start(form) }}
+            {{ form_row(form.code)}}
+            <div class ="p-2 lg:px-4 md:mx-2 text-white rounded bg-red-600">
+            {{ form_row(form.supprimer) }} </div>
+            {{ form_end(form) }}
+                
+                
+            
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
