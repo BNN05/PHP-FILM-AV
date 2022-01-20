@@ -40,6 +40,7 @@ class AddFilmCsvController extends AbstractController
                     $film->setDescription($line[1]);
                     $film->setNote($line[2]);
                     $film->setNbVote($line[3]);
+                    $film->setEmail("");
                     $em->persist($film);
                 }
             }

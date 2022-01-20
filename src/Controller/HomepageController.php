@@ -10,7 +10,7 @@ use App\Entity\Film;
 class HomepageController extends AbstractController
 {
     /**
-     * @Route("/homepage", name="homepage")
+     * @Route("/", name="homepage")
      */
     public function index(): Response
     {
